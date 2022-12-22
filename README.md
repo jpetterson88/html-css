@@ -4,4 +4,4 @@
 Estou aprendendo a criar sites e agora vou gerenciar meu respositório!
 
 <a href="https://jpetterson88.github.io/html-css/modulo2/desafios/d010.b/index.html" target="_blank">Site Android</a>
-<a href="https://jpetterson88.github.io/html-css/modulo3/desafios/d012/index.html">
+<a href="https://jpetterson88.github.io/html-css/modulo3/desafios/d012/index.html" target="_blank">Projeto Cordel</a> 

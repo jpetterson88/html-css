@@ -11,7 +11,7 @@
         }
         
         table {
-            width: 500px;
+            width: 500px; /* 450px para a coluna 'Estado' e 50px para 'População '*/
             border-collapse: collapse;
         }
         
@@ -20,10 +20,25 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgrey;
+        }
+
         thead, tfoot {
             background-color: grey;
             color: white;
         }
+
+        tbody > tr:nth-child(2n) { /* '2n' significa de duas em duas linhas. Pode se usar também 'odd = ímpar' e 'even = par'. Também pode usar 2n-1 e assim por diante */
+            background-color: lightgrey;
+        }
+
+        /* tbody > tr:nth-child(odd) {
+            background-color: blue;
+        } Fazer o efeito zebrado com outra cor na outra linha */
 
         td.num {
             text-align: right;
@@ -35,6 +50,7 @@
     <!-- 
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+        CAPTION    
             THEAD
                 TR, TD, TH
             TBODY
@@ -43,15 +59,17 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th> <!-- 'col' é usado para marcar colunas, onde os dados vem abaixo -->
+                <!-- O 'scope' é usado pelos indexadores (parsers) para buscar os dados de uma tabela de forma coerente. Não há nenhum alteração visual -->
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tfoot> <!-- A tabela joga o 'tfoot' para baixo, devido a semântica -->
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th> <!-- 'row' os dados estão na mesma linha -->
                 <td class="num"><strong>210.147.125</strong></td>
             </tr>
         </tfoot>

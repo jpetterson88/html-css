@@ -11,17 +11,18 @@
     <form action="cadastro.php" method="get">
         <fieldset>
             <legend>Sexo</legend>
-            <input type="radio" name="masc" id="imasc">
+            <!-- colocar o mesmo 'name' só serve para 'type=radio', para que seja possível marcar somente um campo -->
+            <input type="radio" name="sexo" id="imasc" value="M">
             <label for="imasc">Masculino</label><br>
-            <input type="radio" name="fem" id="ifem">
+            <input type="radio" name="sexo" id="ifem" value="F" checked>
             <label for="ifem">Feminino</label><br>
         </fieldset>
         <br>
         <fieldset>
             <legend>Esportes favoritos</legend>
-            <input type="checkbox" name="esbas" id="iesbas">
+            <input type="checkbox" name="esbas" id="iesbas" checked>
             <label for="iesbas">Basquete</label><br> 
-            <input type="checkbox" name="esfut" id="iesfut">
+            <input type="checkbox" name="esfut" id="iesfut" checked>
             <label for="iesfut">Futebol</label><br> 
             <input type="checkbox" name="esnat" id="iesnat">
             <label for="iesnat">Natação</label><br>

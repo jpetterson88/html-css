@@ -14,7 +14,35 @@ Grandes telas: acima de 1200px
 
 /* IMPRESSÃO */
 @media print {
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
 
+    /* não é necessário porque nas versões para impressão, não tem background */
+    body {
+        background-image: url(../imagens/back-print.jpg);
+    }
+
+    main {
+        width: 90vw;
+        border: 2px solid black;
+    }
+
+    main::after {
+        content: 'Essa impressão foi feita através do site www.cursoemvideo.com';
+        text-decoration: overline;
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    #phone { display: none; }
+    #tablet { display: none; }
+    #print { display: block; }
+    #desktop { display: none; }
+    #tv { display: none; }
 }
 
 /* TABLETS */

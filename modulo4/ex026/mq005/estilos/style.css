@@ -19,6 +19,10 @@ header > h1 {
     text-align: center;
 }
 
+menu {
+    display: none;
+}
+
 menu > ul {
     list-style-type: none;
 }
@@ -44,6 +48,20 @@ main {
     margin-top: 10px;
     padding: 10px;
     border-radius: 10px;
+}
+
+.material-symbols-outlined {
+    background-color: rgb(48, 48, 48);
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.material-symbols-outlined:hover {
+    background-color: white;
+    color: black;
 }
 
 article > h2 {

@@ -99,6 +99,7 @@ form > input[type=submit] {
     font-size: 1em;
     width: 100%;
     height: 40px;
+    padding-bottom: 3px;
     background-color: var(--verde);
     color: white;
     border: none;
